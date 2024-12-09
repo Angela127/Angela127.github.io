@@ -1291,23 +1291,23 @@ input, select, textarea {
 			}
 
 		#header .logo {
-    width: 5.5rem; /* Circle size */
-    height: 5.5rem;
-    border: solid 1px #ffffff; /* Circle border */
-    border-radius: 100%; /* Make it a circle */
-    display: flex; /* Flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    overflow: hidden
-    position: relative;
-}
-
-/* Style for the image */
-#header .logo img {
-    width: 50px; /* Scale image relative to the circle */
-    height: 50px; /* Maintain aspect ratio */
-    object-fit: contain; /* Fit the image neatly within the circle */
-}
+		    width: 5.5rem; /* Circle size */
+		    height: 5.5rem;
+		    border: solid 1px #ffffff; /* Circle border */
+		    border-radius: 100%; /* Make it a circle */
+		    display: flex; /* Flexbox for centering */
+		    justify-content: center; /* Center horizontally */
+		    align-items: center; /* Center vertically */
+		    overflow: hidden
+		    position: relative;
+		}
+		
+		/* Style for the image */
+		#header .logo img {
+		    width: 50px; /* Scale image relative to the circle */
+		    height: 50px; /* Maintain aspect ratio */
+		    object-fit: contain; /* Fit the image neatly within the circle */
+		}
 
 			#header .logo .icon:before {
 				font-size: 2rem;
