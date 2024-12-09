@@ -1291,19 +1291,15 @@ input, select, textarea {
 			}
 
 		#header .logo {
-    			width: 5.5rem; /* Circle width */
-    			height: 5.5rem; /* Circle height */
-			border: solid 1px #ffffff; /* Circle border */
-			border-radius: 50%; /* Make it a circle */
-			display: flex; /* Use flexbox for alignment */
-			justify-content: center; /* Center horizontally */
-			align-items: center; /* Center vertically */
-			overflow: hidden; /* Ensure the logo stays inside the circle */
-			position: relative; /* Optional, ensures proper stacking */
-}
+			width: 5.5rem;
+			height: 5.5rem;
+			line-height: 5.5rem;
+			border: solid 1px #ffffff;
+			border-radius: 100%;
+		}
 		#header .logo img {
-			width:3rem; 
-			height:3rem; /* Maintain aspect ratio */
+			width:3.5rem; 
+			height:3.5rem; /* Maintain aspect ratio */
 			object-fit: cover; /* Ensures the image scales nicely */
 		}
 
