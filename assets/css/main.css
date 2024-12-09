@@ -1456,6 +1456,10 @@ input, select, textarea {
 					font-size: 1.75rem;
 				}
 
+			#header .logo .icon:before {
+				font-size: 2rem;
+			}
+
 			#header .content .inner {
 				padding: 2.5rem 1rem;
 			}
