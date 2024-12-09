@@ -1303,7 +1303,7 @@ input, select, textarea {
 		}
 		
 		#header .logo img {
-		    width: 3.5rem; /* Adjust to fit inside the circle */
+		    width: 2rem; /* Adjust to fit inside the circle */
 		    height: 3.5rem; /* Maintain aspect ratio */
 		    object-fit: cover; /* Ensures the image scales nicely */
 		}
