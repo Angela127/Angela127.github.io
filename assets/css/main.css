@@ -1299,7 +1299,6 @@ input, select, textarea {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     overflow: hidden; /* Ensure no overflow */
-    background-color: #000; /* Optional background for visibility */
     position: relative;
 }
 
@@ -1307,7 +1306,7 @@ input, select, textarea {
 #header .logo img {
     width: 100%; /* Scale image relative to the circle */
     height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Fit the image neatly within the circle */
+    object-fit: cover; /* Fit the image neatly within the circle */
 }
 
 			#header .logo .icon:before {
