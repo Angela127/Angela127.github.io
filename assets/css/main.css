@@ -1304,8 +1304,8 @@ input, select, textarea {
 
 /* Style for the image */
 #header .logo img {
-    width: 100%; /* Scale image relative to the circle */
-    height: 100%; /* Maintain aspect ratio */
+    width: 60%; /* Scale image relative to the circle */
+    height: 60%; /* Maintain aspect ratio */
     object-fit: cover; /* Fit the image neatly within the circle */
 }
 
