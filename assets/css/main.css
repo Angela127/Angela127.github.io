@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1288,16 +1291,22 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
-			line-height: 5.5rem;
-			border: solid 1px #ffffff;
-			border-radius: 100%;
+			width: 5.5rem; /* Circle width */
+			height: 5.5rem; /* Circle height */
+			border: solid 1px #ffffff; /* Circle border */
+			border-radius: 50%; /* Make it a circle */
+			display: flex; /* Use flexbox for alignment */
+			justify-content: center; /* Center horizontally */
+			align-items: center; /* Center vertically */
+			overflow: hidden; /* Ensure the logo stays inside the circle */
+			position: relative; /* Optional, ensures proper stacking */
 		}
 
-			#header .logo .icon:before {
-				font-size: 2rem;
-			}
+		#header .logo img {
+			width: 3.5rem; /* Adjust to fit inside the circle */
+			height: 3.5rem; /* Maintain aspect ratio */
+			object-fit: cover; /* Ensures the image scales nicely */
+		}
 
 		#header .content {
 			border-style: solid;
