@@ -1306,7 +1306,7 @@ input, select, textarea {
 #header .logo img {
     width: 60px; /* Scale image relative to the circle */
     height: 60px; /* Maintain aspect ratio */
-    object-fit: cover; /* Fit the image neatly within the circle */
+    object-fit: contain; /* Fit the image neatly within the circle */
 }
 
 			#header .logo .icon:before {
