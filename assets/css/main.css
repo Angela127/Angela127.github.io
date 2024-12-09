@@ -1302,7 +1302,8 @@ input, select, textarea {
 			position: relative; /* Optional, ensures proper stacking */
 }
 		#header .logo img {
-			width:50px; height:50px; /* Maintain aspect ratio */
+			width:3rem; 
+			height:3rem; /* Maintain aspect ratio */
 			object-fit: cover; /* Ensures the image scales nicely */
 		}
 
