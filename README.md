@@ -3,8 +3,9 @@
 
 ---
 
-Hello! I’m **Angela Ngu Xin Yi**, a passionate **Data Engineering** student pursuing a **Bachelor of Computer Science with Honours**. My interests lie in **programming and web development**.  
-This portfolio is a collection of my **assignments, projects and technical skills**. 
+Hello! I’m **Angela Ngu Xin Yi**, a passionate **Data Engineering** student pursuing a **Bachelor of Computer Science with Honours**. My interests lie in **programming and web development**.  <br><br>
+This portfolio is a collection of my **assignments, projects and technical skills**. <br><br>
+[Click Me](https://angela127.github.io/) to take a look at my journey!
 
 Feel free to explore and connect with me!
 
