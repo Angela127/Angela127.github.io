@@ -294,9 +294,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #0c539f;}
     content: " ";
     top: 0;
     left: 0;
-    width: 109%;
+    width: 100%;
     height: 100%;
-    background: rgba(31, 44, 108, 0.3);
+    /*background: rgba(31, 44, 108, 0.3);*/
 }
 
 .profile-video {
@@ -312,7 +312,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #0c539f;}
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 109%;
+    width: 100%;
     height: 90px;
     background: #1f2c6c;
 }
@@ -441,7 +441,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 340px;}
 .tooltip > .tooltip-inner {
    background-color: transparent;
    padding: 1px 5px;
-   color: #0c539f+;
+   color: #0c539f;
    font-weight: 500;
    font-size: 12px;
    border-radius: 0;
@@ -514,6 +514,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 340px;}
 .timeline-content h5 {
     color: #636a82;
     font-size: 14px;
+    font-weight: 300;
+    margin: 18px 0 20px;
+}
+.timeline-content h6 {
+    color: black;
+    font-size: 13px;
     font-weight: 300;
     margin: 18px 0 20px;
 }
@@ -621,6 +627,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 340px;}
         9. Portfolio
 --------------------------------------*/
 .portfolio {
+    background:  #f9fbfd;
     padding:  50px 0 100px;
     border:  1px solid #e5ebf2;
 }
@@ -694,25 +701,190 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 340px;}
 }/*.isotope-overlay*/
 
 /*-------------------------------------
-        10. Clients
+        10. Awards
 --------------------------------------*/
-.clients {padding-top: 50px;}
-.clients-area {
-    display: flex;
-    align-items: center;
-    height: 250px;
+.award {
+    padding: 50px 0 100px;
 }
-.clients-area .item {padding: 0 25px;}
-
-.clients .clients-area .owl-carousel .owl-item img {
-    display: block;
+.award-content {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px; /* Space between the two awards */
+    justify-content: center;
+    align-items: flex-start;
+}
+.single-award {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 45%; /* Ensure both awards fit side by side */
+}
+.single-award-img {
+    position: relative;
+    box-shadow: 0 5px 20px rgba(14, 25, 80, 0.30);
+    margin-bottom: 20px;
+}
+.single-award-img img {
     width: 100%;
     height: auto;
-    border-radius:0;
+    max-height: 200px; /* Ensure consistent image height */
+    object-fit: cover;
+}
+.single-award-txt {
+    text-align: center;
+}
+.single-award-txt h3 {
+    font-size: 18px;
+    color: #3c4258;
+    text-transform: initial;
+    line-height: 1.8;
+}
+.single-award-txt h3 a {
+    font-size: 18px;
+    color: #3c4258; /* Default color for the link */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    position: relative; /* For the hover line effect */
+}
+.single-award-txt h3 a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0c539f; /* Line color on hover */
+    transition: width 0.3s ease; /* Smooth line expansion */
+}
+.single-award-txt h3 a:hover {
+    color: #0c539f;
+}
+.single-award-txt h3 a:hover::after{
+    width:100%;
+}
+
+.single-award-txt p {
+    font-size: 16px;
+    color: #999fb3;
+    margin: 10px 0;
+}
+.single-award-add-info {
+    margin: 10px 0;
+}
+.single-award-add-info h3 {
+    color: #636a82;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.single-award-add-info p {
+    font-weight: 300;
+    margin-top: 3px;
 }
 
 /*-------------------------------------
-        11. Contact
+        11. Porject
+--------------------------------------*/
+.project {
+    background: #f9fbfd;
+    padding: 50px 0 100px;
+}
+
+.project-content {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px; /* Space between the projects */
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.single-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%; /* Ensure both projects fit side by side */
+}
+
+.single-project-media {
+    position: relative;
+    box-shadow: 0 5px 20px rgba(14, 25, 80, 0.30);
+    margin-bottom: 20px;
+    width: 100%;
+    max-height: 320px; /* Ensure consistent media height */
+    overflow: hidden;
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+.single-project-media a video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.single-project-txt {
+    text-align: center;
+}
+
+.single-project-txt h3 {
+    font-size: 18px;
+    color: #3c4258;
+    text-transform: initial;
+    line-height: 1.8;
+}
+
+.single-project-txt h3 a {
+    font-size: 18px;
+    color: #3c4258; /* Default color for the link */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    position: relative; /* For the hover line effect */
+}
+
+.single-project-txt h3 a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0c539f; /* Line color on hover */
+    transition: width 0.3s ease; /* Smooth line expansion */
+}
+
+.single-project-txt h3 a:hover {
+    color: #0c539f;
+}
+
+.single-project-txt h3 a:hover::after {
+    width: 100%;
+}
+
+.single-project-txt p {
+    text-align: center;
+    font-size: 16px;
+    color: #999fb3;
+    margin: 10px 0;
+}
+
+.single-project-add-info {
+    margin: 10px 0;
+}
+
+.single-project-add-info h3 {
+    color: #636a82;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.single-project-add-info p {
+    font-weight: 300;
+    margin-top: 3px;
+}
+
+
+/*-------------------------------------
+        12. Contact
 --------------------------------------*/
 .contact {
     background: #f9fbfd;
