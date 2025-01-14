@@ -111,7 +111,24 @@
 					<div class="col-md-12 text-center">
 						<div class="header-text">
 							<h2>HI <span>,</span> I am <br> ANGELA NGU XIN YI <span>.</span></h2>
-							<p>A First Year Data Engineering Student</p>
+							<p id="typingText"></p>
+
+							<script>
+							  const text = "A First Year Data Engineering Student";
+							  let index = 0;
+							  const typingElement = document.getElementById("typingText");
+						  
+							  function type() {
+								if (index < text.length) {
+								  typingElement.innerHTML += text.charAt(index);
+								  index++;
+								  setTimeout(type, 200); // Adjust the speed of typing here (milliseconds)
+								}
+							  }
+						  
+							  type(); // Start the typing effect
+							</script>
+							
 							
 						</div><!--/.header-text-->
 					</div><!--/.col-->
