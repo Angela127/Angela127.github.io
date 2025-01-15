@@ -229,96 +229,139 @@
 		
 		<!--education start -->
 		<section id="education" class="education">
-			<div class="section-heading text-center">
-				<h2>education</h2>
-			</div>
-			<div class="container">
-				<div class="education-horizontal-timeline">
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2018 - 2022</h2>
-									<h3>secondary school</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											smk st elizabeth
-										</h4>
-										<h5>Sibu, Sarawak</h5>
-										<h6>Position
-											<br>
-											🏓 Secretary of Ping Pong Club
-											<br>
-											📖 Committee of Library</h6>
-										<!--<p class="description">
-											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
-										</p>-->
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2023 - 2024</h2>
-									<h3>foundation <span>in </span> physical science</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											university of technology malaysia (utm)
-										</h4>
-										<h5>skudai, johor</h5>
-										<!--<p class="description">
-											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
-										</p>-->
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2024 - present</h2>
-									<h3>bachelor <span>of </span> computer science </h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal spacial-horizontal-line
-									"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											university of technology malaysia (utm)
-										</h4>
-										<h5>skudai, johor</h5>
-										<h6>Position
-											<br>
-											👩‍💻 AIROST member
-											<br>
-											🎤 TED member</h6>
-										<!--<p class="description">
-											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
-										</p>-->
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+    	<div class="container">
+        <div class="section-heading text-center">
+            <h2>Education</h2>
+        </div>
+        <div class="education-horizontal-timeline">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="single-horizontal-timeline" onclick="openModal('modal-secondary')">
+                        <div class="experience-time">
+                            <h2>2018 - 2022</h2>
+                            <h3>Secondary School</h3>
+                        </div>
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="title">SMK St Elizabeth</h4>
+                            <h5>Sibu, Sarawak</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single-horizontal-timeline" onclick="openModal('modal-foundation')">
+                        <div class="experience-time">
+                            <h2>2023 - 2024</h2>
+                            <h3>Foundation in Physical Science</h3>
+                        </div>
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="title">University of Technology Malaysia (UTM)</h4>
+                            <h5>Skudai, Johor</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single-horizontal-timeline" onclick="openModal('modal-bachelor')">
+                        <div class="experience-time">
+                            <h2>2024 - Present</h2>
+                            <h3>Bachelor of Computer Science</h3>
+                        </div>
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal spacial-horizontal-line"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="title">University of Technology Malaysia (UTM)</h4>
+                            <h5>Skudai, Johor</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Modals -->
+<!-- Secondary School Modal -->
+<div class="modal fade" id="modal-secondary" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Secondary School</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><b>School:</b> SMK St Elizabeth</p>
+                <p><b>Location:</b> Sibu, Sarawak</p>
+                <p><b>Positions:</b></p>
+                <ul>
+                    <li>🏓 Secretary of Ping Pong Club</li>
+                    <li>📖 Committee of Library</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Foundation Modal -->
+<div class="modal fade" id="modal-foundation" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Foundation in Physical Science</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><b>University:</b> University of Technology Malaysia (UTM)</p>
+                <p><b>Location:</b> Skudai, Johor</p>
+                <p><b>Duration:</b> 2023 - 2024</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bachelor's Degree Modal -->
+<div class="modal fade" id="modal-bachelor" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Bachelor of Computer Science</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><b>University:</b> University of Technology Malaysia (UTM)</p>
+                <p><b>Location:</b> Skudai, Johor</p>
+                <p><b>Positions:</b></p>
+                <ul>
+                    <li>👩‍💻 AIROST Member</li>
+                    <li>🎤 TED Member</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<script>
+    // Function to open modals
+    function openModal(modalId) {
+        $('#' + modalId).modal('show');
+    }
+</script>
 		</section><!--/.education-->
 		<!--education end -->
 
